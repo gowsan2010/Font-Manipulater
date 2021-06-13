@@ -1,0 +1,33 @@
+body{
+    background-position: fixed;
+    background-size: contain;
+    background-repeat: repeat-y;
+    background-position-x: center;
+    background-color: orange;
+}
+#head{
+    font-size: 50px;
+    color:rgb(255, 0, 0);
+}
+.danger{
+    color: red;
+}
+.head{
+    background-color: springgreen;
+    border-radius: 20px;
+    box-shadow: 20px 20px 20px black;
+}
+.head:hover{
+    background-color: rgb(185, 0, 209);
+}
+.footer{
+    background-color: darkgray;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 800px;
+    height: 50px;
+    box-shadow: 20px 20px 20px black;
+}
+.footer:hover{
+    background-color: grey;
+}
