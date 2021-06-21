@@ -9,13 +9,25 @@ function setup(){
 }
 function draw(){
     background('#b0abab')
+    textSize(difference);
+    fill('orange');
+    text('Gowtham', nose_x, nose_y);
 }
 function modelLoaded(){
     console.log("poseNet is loaded");
 }
-var last;
+var leftWrist;
+var rightWrist;
+var nose_x;
+var nose_y;
+var difference;
 function gotPoses(results){
     if (results.length>0){
-    last = results.length-1;        
+           console.log(results);
+           leftWrist = results[0].pose.leftWrist.x;
+           rightWrist = results[0].pose.rightWrist.x;
+           nose_x = results[0].pose.nose.x;
+           nose_y = results[0].pose.nose.y;
+           difference = leftWrist-rightWrist;
     }
 }
